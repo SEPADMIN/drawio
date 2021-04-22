@@ -256,7 +256,7 @@ public class ProxyServlet extends HttpServlet
 				.matches("https?://([a-z0-9,-]+[.])*diagrams[.]net/.*"))
 		{
 			dom = referer.toLowerCase().substring(0,
-					referer.indexOf(".diagrams.net/") + 13);
+					referer.indexOf(".sepadmin.github.io/") + 13);
 		}
 		else if (referer != null && referer.toLowerCase()
 				.matches("https?://([a-z0-9,-]+[.])*quipelements[.]com/.*"))

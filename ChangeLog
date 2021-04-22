@@ -121,7 +121,7 @@
 - Adds flow animation style
 - Makes grid steps configurable
 - Adds ctrl+drop to insert dropped content as new page
-- Uses app.diagrams.net for editing [DID-1717]
+- Uses app.sepadmin.github.io for editing [DID-1717]
 - Fixes drag and drop for SVG+XML files
 
 11-FEB-2021: 14.3.1
@@ -416,7 +416,7 @@
 
 17-SEP-2020: 13.7.3
 
-- Moves viewer to viewer.diagrams.net
+- Moves viewer to viewer.sepadmin.github.io
 - Improves shape picker position
 - Uses mxGraph 4.2.1 beta 17
 
@@ -651,7 +651,7 @@
 
 17-JUN-2020: 13.2.5
 
-- Adds embed.diagrams.net for embed mode
+- Adds embed.sepadmin.github.io for embed mode
 - Adds Alt+Shift to toggle child cells
 - Fixes toggle selection for groups
 - Uses mxGraph 4.2.0 beta 10
@@ -929,7 +929,7 @@
 
 17-MAR-2020: 12.8.6
 
-- Migrates localStorage from draw.io to diagrams.net
+- Migrates localStorage from draw.io to sepadmin.github.io
 - Fixes XML embedding within PDFs
 
 14-MAR-2020: 12.8.5
@@ -943,12 +943,12 @@
 
 11-MAR-2020: 12.8.4
 
-- Changes canonical URL to app.diagrams.net
+- Changes canonical URL to app.sepadmin.github.io
 
 11-MAR-2020: 12.8.3
 
 - Switches to PlantUML build 1.2020.2
-- Adds app.diagrams.net support for onedrive and cache responses
+- Adds app.sepadmin.github.io support for onedrive and cache responses
 - Fixes infinite resizing of viewer in conf cloud
 - Uses all layers for drop target selection
 - Uses mxGraph 4.1.1 beta 12
@@ -966,13 +966,13 @@
 - Fixes PDF export for multiple page formats
 - Fixes PDF export page variable placeholder
 - Disables drop shadow in Safari browser
-- Changes name to diagrams.net
+- Changes name to sepadmin.github.io
 
 27-FEB-2020: 12.7.9
 
 - Fixes update of indicator shapes
 - Uses mxGraph 4.1.1 beta 11
-- Adds diagrams.net banner
+- Adds sepadmin.github.io banner
 
 26-FEB-2020: 12.7.8
 
