@@ -3,7 +3,7 @@
  */
 /**
  * No CSS and resources available in embed mode. Parameters and docs:
- * https://www.diagrams.net/doc/faq/embed-html-options
+ * https://www.sepadmin.github.io/doc/faq/embed-html-options
  */
 GraphViewer = function(container, xmlNode, graphConfig)
 {
@@ -16,12 +16,12 @@ mxUtils.extend(GraphViewer, mxEventSource);
 /**
  * Redirects editing to absolue URLs.
  */
-GraphViewer.prototype.editBlankUrl = 'https://app.diagrams.net/';
+GraphViewer.prototype.editBlankUrl = 'https://app.sepadmin.github.io/';
 
 /**
  * Base URL for relative images.
  */
-GraphViewer.prototype.imageBaseUrl = 'https://app.diagrams.net/';
+GraphViewer.prototype.imageBaseUrl = 'https://app.sepadmin.github.io/';
 
 /**
  * Redirects editing to absolue URLs.

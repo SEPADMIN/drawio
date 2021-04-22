@@ -1,7 +1,7 @@
 {
   "name": "draw.io",
   "version": "14.5.1",
-  "description": "diagrams.net desktop",
+  "description": "sepadmin.github.io desktop",
   "main": "electron.js",
   "scripts": {
     "start": "electron ."

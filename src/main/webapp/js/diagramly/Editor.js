@@ -21,7 +21,7 @@
 	/**
 	 * Specifies the app name. Default is document.title.
 	 */
-	Editor.prototype.appName = 'diagrams.net';
+	Editor.prototype.appName = 'sepadmin.github.io';
 		
 	/**
 	 * Known file types.
@@ -1758,7 +1758,7 @@
 	
 	/**
 	 * Global configuration of the Editor
-	 * see https://www.diagrams.net/doc/faq/configure-diagram-editor
+	 * see https://www.sepadmin.github.io/doc/faq/configure-diagram-editor
 	 * 
 	 * For defaultVertexStyle, defaultEdgeStyle and defaultLibraries, this must be called before
 	 * mxSettings.load via global config variable window.mxLoadSettings = false.
@@ -3580,7 +3580,7 @@
 	 */
 	if (window.ColorDialog)
 	{
-		FilenameDialog.filenameHelpLink = 'https://www.diagrams.net/doc/faq/save-file-formats'; 
+		FilenameDialog.filenameHelpLink = 'https://www.sepadmin.github.io/doc/faq/save-file-formats'; 
 		
 		var colorDialogAddRecentColor = ColorDialog.addRecentColor;
 		
@@ -4004,7 +4004,7 @@
 	            option.style.paddingTop = '5px';
 	            div.appendChild(option);
 	            
-	            var help = ui.menus.createHelpLink('https://www.diagrams.net/doc/faq/math-typesetting');
+	            var help = ui.menus.createHelpLink('https://www.sepadmin.github.io/doc/faq/math-typesetting');
 	            help.style.position = 'relative';
 	            help.style.marginLeft = '6px';
 	            help.style.top = '2px';
@@ -7467,7 +7467,7 @@
 		{
 			var helpBtn = mxUtils.button(mxResources.get('help'), function()
 			{
-				graph.openLink('https://www.diagrams.net/doc/faq/print-diagram');
+				graph.openLink('https://www.sepadmin.github.io/doc/faq/print-diagram');
 			});
 			
 			helpBtn.className = 'geBtn';

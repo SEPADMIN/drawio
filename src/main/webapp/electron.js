@@ -44,7 +44,7 @@ var queryObj = {
 	'browser': 0,
 	'picker': 0,
 	'mode': 'device',
-	'export': 'https://convert.diagrams.net/node/export'
+	'export': 'https://convert.sepadmin.github.io/node/export'
 };
 
 try
@@ -1171,7 +1171,7 @@ async function mergePdfs(pdfFiles, xml)
 	try 
 	{
 		const pdfDoc = await PDFDocument.create();
-		pdfDoc.setCreator('diagrams.net');
+		pdfDoc.setCreator('sepadmin.github.io');
 
 		if (xml != null)
 		{	

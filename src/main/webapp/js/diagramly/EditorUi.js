@@ -91,7 +91,7 @@
 	/**
 	 * Link for scratchpad help.
 	 */
-	EditorUi.scratchpadHelpLink = 'https://www.diagrams.net/doc/faq/scratchpad';
+	EditorUi.scratchpadHelpLink = 'https://www.sepadmin.github.io/doc/faq/scratchpad';
 
 	/**
 	 * Default Mermaid config without using foreign objects in flowcharts.
@@ -1670,7 +1670,7 @@
 		return ((redirect == null) ? '<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=5,IE=9" ><![endif]-->\n' : '') +
 			'<!DOCTYPE html>\n<html' + ((redirect != null) ? ' xmlns="http://www.w3.org/1999/xhtml">' : '>') +
 			'\n<head>\n' + ((redirect == null) ? ((title != null) ? '<title>' + mxUtils.htmlEntities(title) +
-				'</title>\n' : '') : '<title>diagrams.net</title>\n') +
+				'</title>\n' : '') : '<title>sepadmin.github.io</title>\n') +
 			((redirect != null) ? '<meta http-equiv="refresh" content="0;URL=\'' + redirect + '\'"/>\n' : '') +
 			'</head>\n<body' +
 			(((redirect == null && bg != null && bg != mxConstants.NONE) ? ' style="background-color:' + bg + ';">' : '>')) +
@@ -1709,7 +1709,7 @@
 		return ((redirect == null) ? '<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=5,IE=9" ><![endif]-->\n' : '') +
 			'<!DOCTYPE html>\n<html' + ((redirect != null) ? ' xmlns="http://www.w3.org/1999/xhtml">' : '>') +
 			'\n<head>\n' + ((redirect == null) ? ((title != null) ? '<title>' + mxUtils.htmlEntities(title) +
-				'</title>\n' : '') : '<title>diagrams.net</title>\n') +
+				'</title>\n' : '') : '<title>sepadmin.github.io</title>\n') +
 			((redirect != null) ? '<meta http-equiv="refresh" content="0;URL=\'' + redirect + '\'"/>\n' : '') +
 			'<meta charset="utf-8"/>\n</head>\n<body>' +
 			'\n<div class="mxgraph" style="' + style + '" data-mxgraph="' + mxUtils.htmlEntities(JSON.stringify(data)) + '"></div>\n' +
@@ -5182,7 +5182,7 @@
 		
 		if (lightbox)
 		{
-			if (EditorUi.lightboxHost != 'https://viewer.diagrams.net' || urlParams['dev'] == '1')
+			if (EditorUi.lightboxHost != 'https://viewer.sepadmin.github.io' || urlParams['dev'] == '1')
 			{
 				params.push('lightbox=1');
 			}
@@ -5503,13 +5503,13 @@
 		div.appendChild(hd);
 		
 		var file = this.getCurrentFile();
-		var helpLink = 'https://www.diagrams.net/doc/faq/publish-diagram-as-link';
+		var helpLink = 'https://www.sepadmin.github.io/doc/faq/publish-diagram-as-link';
 		var dy = 0;
 		
 		if (file != null && file.constructor == window.DriveFile && !hideShare)
 		{
 			dy = 80;
-			helpLink = 'https://www.diagrams.net/doc/faq/google-drive-publicly-publish-diagram';
+			helpLink = 'https://www.sepadmin.github.io/doc/faq/google-drive-publicly-publish-diagram';
 			var hintSection = document.createElement('div');
 			hintSection.style.cssText = 'border-bottom:1px solid lightGray;padding-bottom:14px;padding-top:6px;margin-bottom:14px;text-align:center;';
 			
@@ -8906,13 +8906,13 @@
 		// Sets help link for placeholders
 		if (!this.isOffline() && typeof window.EditDataDialog !== 'undefined')
 		{
-			EditDataDialog.placeholderHelpLink = 'https://www.diagrams.net/doc/faq/predefined-placeholders';
+			EditDataDialog.placeholderHelpLink = 'https://www.sepadmin.github.io/doc/faq/predefined-placeholders';
 		}
 		
 		if (/viewer\.diagrams\.net$/.test(window.location.hostname) ||
 			/embed\.diagrams\.net$/.test(window.location.hostname))
 		{
-			this.editor.editBlankUrl = 'https://app.diagrams.net/';
+			this.editor.editBlankUrl = 'https://app.sepadmin.github.io/';
 		}
 		
 		// Passes dev mode to new window
@@ -13393,7 +13393,7 @@
 			}
 			
 			if (pendingLibs == 0) this.spinner.stop();
-		}), null, null, 'https://www.diagrams.net/doc/faq/custom-libraries-confluence-cloud');
+		}), null, null, 'https://www.sepadmin.github.io/doc/faq/custom-libraries-confluence-cloud');
 		this.showDialog(dlg.container, 340, 375, true, true, null, null, null, null, true);
 	};
 	
@@ -13401,9 +13401,9 @@
 	//White-listed functions and some info about it
 	EditorUi.prototype.remoteInvokableFns = {
 		getDiagramTextContent: {isAsync: false},
-		getLocalStorageFile: {isAsync: false, allowedDomains: ['app.diagrams.net']},
-		getLocalStorageFileNames: {isAsync: false, allowedDomains: ['app.diagrams.net']},
-		setMigratedFlag: {isAsync: false, allowedDomains: ['app.diagrams.net']}
+		getLocalStorageFile: {isAsync: false, allowedDomains: ['app.sepadmin.github.io']},
+		getLocalStorageFileNames: {isAsync: false, allowedDomains: ['app.sepadmin.github.io']},
+		setMigratedFlag: {isAsync: false, allowedDomains: ['app.sepadmin.github.io']}
 	};
 	
 	EditorUi.prototype.remoteInvokeCallbacks = [];
@@ -13631,7 +13631,7 @@
 							EditorUi.migrateStorageFiles = false;
 						}
 
-						if (location.host == 'app.diagrams.net' && !this.drawioMigrationStarted)
+						if (location.host == 'app.sepadmin.github.io' && !this.drawioMigrationStarted)
 						{
 							this.drawioMigrationStarted = true;
 							

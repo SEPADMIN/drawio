@@ -70,7 +70,7 @@
 
 			var script = document.createElement('script');
 			script.type = 'text/javascript';
-			script.src = 'https://app.diagrams.net/math/MathJax.js';
+			script.src = 'https://app.sepadmin.github.io/math/MathJax.js';
 			document.getElementsByTagName('head')[0].appendChild(script);
 		}
 	};
@@ -109,7 +109,7 @@
 					key = key.substring(1, key.length);
 				}
 				
-				key = 'https://app.diagrams.net/' + key;
+				key = 'https://app.sepadmin.github.io/' + key;
 			}
 			
 			return key;
@@ -731,7 +731,7 @@
 							{
 								if (url != null)
 								{
-									window.open('https://app.diagrams.net/#U' + encodeURIComponent(url));
+									window.open('https://app.sepadmin.github.io/#U' + encodeURIComponent(url));
 								}
 								else
 								{
@@ -747,7 +747,7 @@
 									};
 									
 									window.addEventListener('message', receive);
-									wnd = window.open('https://app.diagrams.net/?client=1');
+									wnd = window.open('https://app.sepadmin.github.io/?client=1');
 								}
 							}
 							else

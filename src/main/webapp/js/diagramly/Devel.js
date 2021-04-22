@@ -12,7 +12,7 @@ if (!mxIsElectron && location.protocol !== 'http:')
 	{
 		var csp = 'default-src \'self\'; ' +
 			// storage.googleapis.com is needed for workbox-service-worker
-			'script-src %script-src% \'self\' https://viewer.diagrams.net https://storage.googleapis.com ' +
+			'script-src %script-src% \'self\' https://viewer.sepadmin.github.io https://storage.googleapis.com ' +
 				'https://apis.google.com https://*.pusher.com https://code.jquery.com ' +
 				// Below are the SHAs of the two script blocks in index.html.
 				// These must be updated here and in the CDN after changes.
@@ -49,7 +49,7 @@ if (!mxIsElectron && location.protocol !== 'http:')
 				'\'sha256-4Dg3/NrB8tLC7TUSCbrtUDWD/J6bSLka01GHn+qtNZ0=\' ' +
 				//---------------------------------------------------------//
 				'; ' +
-			'connect-src %connect-src% \'self\' https://*.draw.io https://*.diagrams.net ' +
+			'connect-src %connect-src% \'self\' https://*.draw.io https://*.sepadmin.github.io ' +
 				'https://*.googleapis.com wss://*.pusher.com https://*.pusher.com ' +
 				'https://api.github.com https://raw.githubusercontent.com https://gitlab.com ' +
 				'https://graph.microsoft.com https://*.sharepoint.com  https://*.1drv.com ' +
@@ -57,9 +57,9 @@ if (!mxIsElectron && location.protocol !== 'http:')
 				'https://*.google.com https://fonts.gstatic.com https://fonts.googleapis.com; ' +
 			// font-src about: is required for MathJax HTML-CSS output with STIX
 			'img-src * data:; media-src * data:; font-src * about:; ' +
-			// www.draw.io required for browser data migration to app.diagrams.net and
-			// viewer.diagrams.net required for iframe embed preview
-			'frame-src %frame-src% \'self\' https://viewer.diagrams.net https://www.draw.io https://*.google.com; ' +
+			// www.draw.io required for browser data migration to app.sepadmin.github.io and
+			// viewer.sepadmin.github.io required for iframe embed preview
+			'frame-src %frame-src% \'self\' https://viewer.sepadmin.github.io https://www.draw.io https://*.google.com; ' +
 			'style-src %style-src% \'self\' \'unsafe-inline\' https://fonts.googleapis.com;'
 
 		var devCsp = csp.
@@ -81,7 +81,7 @@ if (!mxIsElectron && location.protocol !== 'http:')
 				replace(/%frame-src%/g, '').
 					replace(/%style-src%/g, '').
 					replace(/  /g, ' ') + ' frame-ancestors \'self\' https://teams.microsoft.com;';
-			console.log('app.diagrams.net:', app_diagrams_net);
+			console.log('app.sepadmin.github.io:', app_diagrams_net);
 			// TODO remove https://ajax.googleapis.com April 2022. It's old jquery domain
 			var ac_draw_io = csp.replace(/%script-src%/g, 'https://aui-cdn.atlassian.com https://connect-cdn.atl-paas.net https://ajax.googleapis.com https://cdnjs.cloudflare.com').
 					replace(/%frame-src%/g, 'https://www.lucidchart.com https://app.lucidchart.com').
@@ -95,7 +95,7 @@ if (!mxIsElectron && location.protocol !== 'http:')
 					replace(/%connect-src%/g, '').
 					replace(/  /g, ' ');
 			console.log('aj.draw.io:', aj_draw_io);
-			console.log('import.diagrams.net:', 'default-src \'self\'; worker-src blob:; img-src \'self\' blob: data: https://www.lucidchart.com ' +
+			console.log('import.sepadmin.github.io:', 'default-src \'self\'; worker-src blob:; img-src \'self\' blob: data: https://www.lucidchart.com ' +
 					'https://app.lucidchart.com; style-src \'self\' \'unsafe-inline\'; frame-src https://www.lucidchart.com https://app.lucidchart.com;');
 			console.log('Development:', devCsp);
 			

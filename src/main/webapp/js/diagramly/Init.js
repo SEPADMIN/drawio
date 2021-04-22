@@ -17,13 +17,13 @@ window.isSvgBrowser = true;
 
 // CUSTOM_PARAMETERS - URLs for save and export
 window.DRAWIO_BASE_URL = window.DRAWIO_BASE_URL || ((/.*\.draw\.io$/.test(window.location.hostname)) || (/.*\.diagrams\.net$/.test(window.location.hostname)) ?
-	window.location.protocol + '//' + window.location.hostname : 'https://app.diagrams.net');
-window.DRAWIO_LIGHTBOX_URL = window.DRAWIO_LIGHTBOX_URL || 'https://viewer.diagrams.net';
-window.EXPORT_URL = window.EXPORT_URL || 'https://convert.diagrams.net/node/export';
-window.PLANT_URL = window.PLANT_URL || 'https://plant-aws.diagrams.net';
+	window.location.protocol + '//' + window.location.hostname : 'https://app.sepadmin.github.io');
+window.DRAWIO_LIGHTBOX_URL = window.DRAWIO_LIGHTBOX_URL || 'https://viewer.sepadmin.github.io';
+window.EXPORT_URL = window.EXPORT_URL || 'https://convert.sepadmin.github.io/node/export';
+window.PLANT_URL = window.PLANT_URL || 'https://plant-aws.sepadmin.github.io';
 window.DRAW_MATH_URL = window.DRAW_MATH_URL || window.DRAWIO_BASE_URL + '/math';
-window.VSD_CONVERT_URL = window.VSD_CONVERT_URL || 'https://convert.diagrams.net/VsdConverter/api/converter';
-window.EMF_CONVERT_URL = window.EMF_CONVERT_URL || 'https://convert.diagrams.net/emf2png/convertEMF';
+window.VSD_CONVERT_URL = window.VSD_CONVERT_URL || 'https://convert.sepadmin.github.io/VsdConverter/api/converter';
+window.EMF_CONVERT_URL = window.EMF_CONVERT_URL || 'https://convert.sepadmin.github.io/emf2png/convertEMF';
 window.REALTIME_URL = window.REALTIME_URL || 'cache';
 window.DRAWIO_GITLAB_URL = window.DRAWIO_GITLAB_URL || 'https://gitlab.com';
 window.DRAWIO_GITLAB_ID = window.DRAWIO_GITLAB_ID || '5cdc018a32acddf6eba37592d9374945241e644b8368af847422d74c8709bc44';
@@ -337,13 +337,13 @@ function setCurrentXml(data, filename)
 	
 	if (host != 'test.draw.io')
 	{
-		var searchString = 'diagrams.net';
+		var searchString = 'sepadmin.github.io';
 		var position = host.length - searchString.length;
 		var lastIndex = host.lastIndexOf(searchString, position);
 		
 		if (lastIndex !== -1 && lastIndex === position)
 		{
-			window.DRAWIO_LOG_URL = 'https://log.diagrams.net';
+			window.DRAWIO_LOG_URL = 'https://log.sepadmin.github.io';
 		}
 		else
 		{
@@ -380,7 +380,7 @@ if (urlParams['mode'] == 'trello')
 }
 
 // Uses embed mode on embed domain
-if (window.location.hostname == 'embed.diagrams.net')
+if (window.location.hostname == 'embed.sepadmin.github.io')
 {
 	urlParams['embed'] = '1';
 }	
