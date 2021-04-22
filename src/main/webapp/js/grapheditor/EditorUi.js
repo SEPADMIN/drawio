@@ -1405,6 +1405,7 @@ EditorUi.prototype.getCellsForShapePicker = function(cell)
 		createVertex('whiteSpace=wrap;html=1;'),
 		createVertex('rounded=1;whiteSpace=wrap;html=1;'),
 		createVertex('ellipse;whiteSpace=wrap;html=1;'),
+		createVertex('ellipse;whiteSpace=wrap;html=1;'),
 		createVertex('rhombus;whiteSpace=wrap;html=1;', 80, 80),
 		createVertex('shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;'),
 		createVertex('shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;', 120, 60),
