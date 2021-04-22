@@ -2,7 +2,7 @@
 
 About
 -----
-[sepadmin.github.io](https://app.sepadmin.github.io), [previously draw.io](https://www.sepadmin.github.io/blog/move-diagrams-net), is an online diagramming web site that delivers the source in this project.
+[diagrams.net](https://app.diagrams.net), [previously draw.io](https://www.diagrams.net/blog/move-diagrams-net), is an online diagramming web site that delivers the source in this project.
 
 License
 -------
@@ -17,20 +17,20 @@ The [mxGraph documentation](https://jgraph.github.io/mxgraph/) provides a lot of
 
 Running
 -------
-One way to run sepadmin.github.io is to fork this project, [publish the master branch to GitHub pages](https://help.github.com/categories/github-pages-basics/) and the [pages sites](https://jgraph.github.io/drawio/src/main/webapp/index.html) will have the full editor functionality (sans the integrations).
+One way to run diagrams.net is to fork this project, [publish the master branch to GitHub pages](https://help.github.com/categories/github-pages-basics/) and the [pages sites](https://jgraph.github.io/drawio/src/main/webapp/index.html) will have the full editor functionality (sans the integrations).
 
-Another way is to use [the recommended Docker project](https://github.com/jgraph/docker-drawio) or to download [draw.io Desktop](https://get.sepadmin.github.io).
+Another way is to use [the recommended Docker project](https://github.com/jgraph/docker-drawio) or to download [draw.io Desktop](https://get.diagrams.net).
 
 The full packaged .war of the client and servlets is built when the project is tagged and available on the [releases page](https://github.com/jgraph/draw.io/releases).
 
 Supported Browsers
 ------------------
-sepadmin.github.io supports IE 11, Chrome 70+, Firefox 70+, Safari 11+, Opera 50+, Native Android browser 7x+, the default browser in the current and previous major iOS versions (e.g. 11.2.x and 10.3.x) and Edge 79+.
+diagrams.net supports IE 11, Chrome 70+, Firefox 70+, Safari 11+, Opera 50+, Native Android browser 7x+, the default browser in the current and previous major iOS versions (e.g. 11.2.x and 10.3.x) and Edge 79+.
 
 Open-source, not open-contribution
 ----------------------------------
 
-[Similar to SQLite](https://www.sqlite.org/copyright.html), sepadmin.github.io is open
+[Similar to SQLite](https://www.sqlite.org/copyright.html), diagrams.net is open
 source but closed to contributions.
 
 The level of complexity of this project means that even simple changes 

@@ -7,7 +7,7 @@
  * 
  * Documentation:
  * 
- * https://www.sepadmin.github.io/doc/faq/voice-plugin
+ * https://www.diagrams.net/doc/faq/voice-plugin
  * 
  * TODO: Use grammer https://msdn.microsoft.com/en-us/library/ee800145.aspx
  */
@@ -260,7 +260,7 @@ Draw.loadPlugin(function(ui) {
 	
     ui.actions.addAction('speechHelp', function()
     {
-    	window.open('https://www.sepadmin.github.io/doc/faq/voice-plugin');
+    	window.open('https://www.diagrams.net/doc/faq/voice-plugin');
     });
 
     // Hijacks the settings for storing current voice
@@ -846,7 +846,7 @@ Draw.loadPlugin(function(ui) {
 			}
 			else if (tokens[0] == 'help')
 			{
-				var wnd = ui.openLink('https://www.sepadmin.github.io/doc/faq/voice-plugin');
+				var wnd = ui.openLink('https://www.diagrams.net/doc/faq/voice-plugin');
 				
 				if (wnd == null)
 				{
@@ -860,7 +860,7 @@ Draw.loadPlugin(function(ui) {
 					
 					if (searchTerm !=  null && searchTerm.length > 0)
 					{
-						ui.openLink('https://www.google.com/search?q=site%3Asepadmin.github.io+inurl%3A%2Fdoc%2Ffaq%2F+' +
+						ui.openLink('https://www.google.com/search?q=site%3Adiagrams.net+inurl%3A%2Fdoc%2Ffaq%2F+' +
 							encodeURIComponent(searchTerm));
 						App.say(command);
 					}

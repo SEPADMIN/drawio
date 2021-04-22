@@ -1205,7 +1205,7 @@ EditorUi.initMinimalTheme = function()
 			if (typeof(MathJax) !== 'undefined')
 			{
 				var item = ui.menus.addMenuItem(menu, 'mathematicalTypesetting', parent);
-				ui.menus.addLinkToItem(item, 'https://www.sepadmin.github.io/doc/faq/math-typesetting');
+				ui.menus.addLinkToItem(item, 'https://www.diagrams.net/doc/faq/math-typesetting');
 			}
 			
             ui.menus.addMenuItems(menu, ['copyConnect', 'collapseExpand', '-', 'pageScale'], parent);

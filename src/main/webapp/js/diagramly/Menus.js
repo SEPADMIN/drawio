@@ -62,7 +62,7 @@
 		var dropboxEnabled = ((urlParams['embed'] != '1' && urlParams['db'] != '0') || (urlParams['embed'] == '1' && urlParams['db'] == '1')) &&
 			mxClient.IS_SVG && (document.documentMode == null || document.documentMode > 9);
 		var oneDriveEnabled = (window.location.hostname == 'www.draw.io' || window.location.hostname == 'test.draw.io' ||
-			window.location.hostname == 'drive.draw.io' || window.location.hostname == 'app.sepadmin.github.io') &&
+			window.location.hostname == 'drive.draw.io' || window.location.hostname == 'app.diagrams.net') &&
 			(((urlParams['embed'] != '1' && urlParams['od'] != '0') || (urlParams['embed'] == '1' && urlParams['od'] == '1')) &&
 			!mxClient.IS_IOS && (navigator.userAgent.indexOf('MSIE') < 0 || document.documentMode >= 10));
 		var trelloEnabled = urlParams['tr'] == '1' && mxClient.IS_SVG && (document.documentMode == null ||
@@ -587,7 +587,7 @@
 		editorUi.actions.put('exportSvg', new Action(mxResources.get('formatSvg') + '...', function()
 		{
 			editorUi.showExportDialog(mxResources.get('formatSvg'), true, mxResources.get('export'),
-				'https://www.sepadmin.github.io/doc/faq/export-diagram',
+				'https://www.diagrams.net/doc/faq/export-diagram',
 				mxUtils.bind(this, function(scale, transparentBackground, ignoreSelection, addShadow, editable,
 					embedImages, border, cropImage, currentPage, linkTarget, grid, keepTheme, exportType)
 				{
@@ -607,7 +607,7 @@
 			if (editorUi.isExportToCanvas())
 			{
 				editorUi.showExportDialog(mxResources.get('image'), false, mxResources.get('export'),
-					'https://www.sepadmin.github.io/doc/faq/export-diagram',
+					'https://www.diagrams.net/doc/faq/export-diagram',
 					mxUtils.bind(this, function(scale, transparentBackground, ignoreSelection, addShadow, editable,
 						embedImages, border, cropImage, currentPage, dummy, grid, keepTheme, exportType)
 					{
@@ -635,7 +635,7 @@
 			if (editorUi.isExportToCanvas())
 			{
 				editorUi.showExportDialog(mxResources.get('image'), false, mxResources.get('export'),
-					'https://www.sepadmin.github.io/doc/faq/export-diagram',
+					'https://www.diagrams.net/doc/faq/export-diagram',
 					mxUtils.bind(this, function(scale, transparentBackground, ignoreSelection, addShadow, editable,
 						embedImages, border, cropImage, currentPage, dummy, grid, keepTheme, exportType)
 					{
@@ -683,7 +683,7 @@
 			}
 			else
 			{
-				editorUi.openLink('https://www.sepadmin.github.io/');
+				editorUi.openLink('https://www.diagrams.net/');
 			}
 		}));
 		
@@ -713,7 +713,7 @@
 			}
 			else
 			{
-				editorUi.openLink('https://viewer.sepadmin.github.io/#Uhttps%3A%2F%2Fviewer.sepadmin.github.io%2Fshortcuts.svg');
+				editorUi.openLink('https://viewer.diagrams.net/#Uhttps%3A%2F%2Fviewer.diagrams.net%2Fshortcuts.svg');
 			}
 		});
 
@@ -743,7 +743,7 @@
 		
 		editorUi.actions.addAction('downloadDesktop...', function()
 		{
-			editorUi.openLink('https://get.sepadmin.github.io/');
+			editorUi.openLink('https://get.diagrams.net/');
 		});
 		
 		action = editorUi.actions.addAction('tags...', mxUtils.bind(this, function()
@@ -922,7 +922,7 @@
 						}
 					}
 				}, null, null, null, null, null, true, null, null,
-					'https://www.sepadmin.github.io/doc/faq/configure-diagram-editor',
+					'https://www.diagrams.net/doc/faq/configure-diagram-editor',
 					buttons);
 		    	
 		    	dlg.textarea.style.width = '600px';
@@ -1077,7 +1077,7 @@
 					}
 				}
 			}, null, null, null, null, null, true, null, null,
-				'https://www.sepadmin.github.io/doc/faq/apply-layouts');
+				'https://www.diagrams.net/doc/faq/apply-layouts');
 	    	
 	    	dlg.textarea.style.width = '600px';
 	    	dlg.textarea.style.height = '380px';
@@ -1294,7 +1294,7 @@
 					
 					if (e.keyCode == 13 && term.length > 0)
 					{
-						this.editorUi.openLink('https://www.google.com/search?q=site%3Asepadmin.github.io+inurl%3A%2Fdoc%2Ffaq%2F+' +
+						this.editorUi.openLink('https://www.google.com/search?q=site%3Adiagrams.net+inurl%3A%2Fdoc%2Ffaq%2F+' +
 							encodeURIComponent(term));
 						input.value = '';
 						EditorUi.logEvent({category: 'SEARCH-HELP', action: 'search', label: term});
@@ -1758,7 +1758,7 @@
 				{
 					editorUi.spinner.stop();
 					
-					editorUi.showHtmlDialog(mxResources.get('create'), 'https://www.sepadmin.github.io/doc/faq/embed-html-options',
+					editorUi.showHtmlDialog(mxResources.get('create'), 'https://www.diagrams.net/doc/faq/embed-html-options',
 						url, function(publicUrl, zoomEnabled, initialZoom, linkTarget, linkColor, fit, allPages, layers, lightbox, editLink)
 					{
 						editorUi.createHtml(publicUrl, zoomEnabled, initialZoom, linkTarget, linkColor,
@@ -1899,7 +1899,7 @@
 					});
 				}
 			}, mxResources.get('formatSvg'), mxResources.get('image'),
-				true, 'https://www.sepadmin.github.io/doc/faq/embed-svg.html');
+				true, 'https://www.diagrams.net/doc/faq/embed-svg.html');
 		}));
 		
 		editorUi.actions.put('embedIframe', new Action(mxResources.get('iframe') + '...', function()
@@ -3353,7 +3353,7 @@
 				
 				if (!editorUi.isOffline() || mxClient.IS_CHROMEAPP || EditorUi.isElectronApp)
 				{
-					this.addLinkToItem(item, 'https://www.sepadmin.github.io/doc/faq/scratchpad');
+					this.addLinkToItem(item, 'https://www.diagrams.net/doc/faq/scratchpad');
 				}
 			}
 			
@@ -3396,7 +3396,7 @@
 				
 				if (!editorUi.isOffline() || mxClient.IS_CHROMEAPP || EditorUi.isElectronApp)
 				{
-					this.addLinkToItem(item, 'https://www.sepadmin.github.io/doc/faq/math-typesetting');
+					this.addLinkToItem(item, 'https://www.diagrams.net/doc/faq/math-typesetting');
 				}
 			}
 			
@@ -3544,7 +3544,7 @@
 					
 					if (!editorUi.isOffline() || mxClient.IS_CHROMEAPP || EditorUi.isElectronApp)
 					{
-						this.addLinkToItem(item, 'https://www.sepadmin.github.io/doc/faq/synchronize');
+						this.addLinkToItem(item, 'https://www.diagrams.net/doc/faq/synchronize');
 					}
 					
 					menu.addSeparator(parent);
@@ -3576,7 +3576,7 @@
 						
 						if (!editorUi.isOffline() || mxClient.IS_CHROMEAPP || EditorUi.isElectronApp)
 						{
-							this.addLinkToItem(item, 'https://www.sepadmin.github.io/doc/faq/synchronize');
+							this.addLinkToItem(item, 'https://www.diagrams.net/doc/faq/synchronize');
 						}
 					}
 					

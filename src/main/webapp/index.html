@@ -5,10 +5,10 @@
     <title>Flowchart Maker &amp; Online Diagram Software</title>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="Description" content="sepadmin.github.io is free online diagram software for making flowcharts, process diagrams, org charts, UML, ER and network diagrams">
+    <meta name="Description" content="diagrams.net is free online diagram software for making flowcharts, process diagrams, org charts, UML, ER and network diagrams">
     <meta name="Keywords" content="diagram, online, flow chart, flowchart maker, uml, erd">
-    <meta itemprop="name" content="sepadmin.github.io - free flowchart maker and diagrams online">
-	<meta itemprop="description" content="sepadmin.github.io is a free online diagramming application  and flowchart maker . You can use it to create UML, entity relationship,
+    <meta itemprop="name" content="diagrams.net - free flowchart maker and diagrams online">
+	<meta itemprop="description" content="diagrams.net is a free online diagramming application  and flowchart maker . You can use it to create UML, entity relationship,
 		org charts, BPMN and BPM, database schema and networks. Also possible are telecommunication network, workflow, flowcharts, maps overlays and GIS, electronic 
 		circuit and social network diagrams.">
 	<meta itemprop="image" content="https://lh4.googleusercontent.com/-cLKEldMbT_E/Tx8qXDuw6eI/AAAAAAAAAAs/Ke0pnlk8Gpg/w500-h344-k/BPMN%2Bdiagram%2Brc2f.png">
@@ -20,7 +20,7 @@
 		/**
 		 * URL Parameters and protocol description are here:
 		 *
-		 * https://desk.sepadmin.github.io/support/solutions/articles/16000042546-what-url-parameters-are-supported
+		 * https://desk.diagrams.net/support/solutions/articles/16000042546-what-url-parameters-are-supported
 		 *
 		 * Parameters for developers:
 		 *
@@ -87,9 +87,9 @@
 					var host = window.location.host;
 		
 					// Redirects apex, drive and rt to www
-					if (host === 'sepadmin.github.io' || host === 'rt.sepadmin.github.io' || host === 'drive.sepadmin.github.io')
+					if (host === 'diagrams.net' || host === 'rt.diagrams.net' || host === 'drive.diagrams.net')
 					{
-						host = 'www.sepadmin.github.io';
+						host = 'www.diagrams.net';
 					}
 					
 					var href = proto + '//' + host + window.location.href.substring(
@@ -207,13 +207,13 @@
 		 */
 		(function()
 		{
-			var name = 'sepadmin.github.io';
+			var name = 'diagrams.net';
 			mxmeta('apple-mobile-web-app-title', name);
 			mxmeta('application-name', name);
 
 			if (mxIsElectron)
 			{
-				mxmeta(null, 'default-src \'self\' \'unsafe-inline\'; connect-src \'self\' https://*.sepadmin.github.io https://fonts.googleapis.com https://fonts.gstatic.com; img-src * data:; media-src *; font-src *; style-src-elem \'self\' \'unsafe-inline\' https://fonts.googleapis.com', 'Content-Security-Policy');
+				mxmeta(null, 'default-src \'self\' \'unsafe-inline\'; connect-src \'self\' https://*.diagrams.net https://fonts.googleapis.com https://fonts.gstatic.com; img-src * data:; media-src *; font-src *; style-src-elem \'self\' \'unsafe-inline\' https://fonts.googleapis.com', 'Content-Security-Policy');
 			}
 		})();
 		
@@ -247,7 +247,7 @@
 			// Used to request grapheditor/mxgraph sources in dev mode
 			var mxDevUrl = document.location.protocol + '//devhost.jgraph.com/drawio/src/main';
 			
-			// Used to request sepadmin.github.io sources in dev mode
+			// Used to request diagrams.net sources in dev mode
 			var drawDevUrl = document.location.protocol + '//devhost.jgraph.com/drawio/src/main/webapp/';
 			var geBasePath = drawDevUrl + '/js/grapheditor';
 			var mxBasePath = mxDevUrl + '/mxgraph';
@@ -287,9 +287,9 @@
 			{
 				var hostName = window.location.hostname;
 				
-				// Supported domains are *.sepadmin.github.io and the packaged version in Quip
-				var supportedDomain = (hostName.substring(hostName.length - 8, hostName.length) === '.sepadmin.github.io') ||
-					(hostName.substring(hostName.length - 13, hostName.length) === '.sepadmin.github.io');
+				// Supported domains are *.diagrams.net and the packaged version in Quip
+				var supportedDomain = (hostName.substring(hostName.length - 8, hostName.length) === '.diagrams.net') ||
+					(hostName.substring(hostName.length - 13, hostName.length) === '.diagrams.net');
 					(hostName.substring(hostName.length - 17, hostName.length) === '.quipelements.com');
 				
 				function loadAppJS()
@@ -357,7 +357,7 @@
 	<link rel="stylesheet" type="text/css" href="js/croppie/croppie.min.css">
     <link rel="stylesheet" type="text/css" href="styles/grapheditor.css">
     <link rel="preconnect" href="https://storage.googleapis.com">
-    <link rel="canonical" href="https://app.sepadmin.github.io">
+    <link rel="canonical" href="https://app.diagrams.net">
 	<link rel="manifest" href="images/manifest.json">
 	<link rel="shortcut icon" href="favicon.ico">
 	<style type="text/css">
@@ -430,8 +430,8 @@
 	<div class="geBlock" style="text-align:center;min-width:50%;">
 		<h1>Flowchart Maker and Online Diagram Software</h1>
 		<p>
-			sepadmin.github.io (formerly sepadmin.github.io) is free online diagram software. You can use it as a flowchart maker, network diagram software, to create UML online, as an ER diagram tool, 
-			to design database schema, to build BPMN online, as a circuit diagram maker, and more. sepadmin.github.io can import .vsdx, Gliffy&trade; and Lucidchart&trade; files .
+			diagrams.net (formerly diagrams.net) is free online diagram software. You can use it as a flowchart maker, network diagram software, to create UML online, as an ER diagram tool, 
+			to design database schema, to build BPMN online, as a circuit diagram maker, and more. diagrams.net can import .vsdx, Gliffy&trade; and Lucidchart&trade; files .
 		</p>
 		<h2 id="geStatus">Loading...</h2>
 		<p>

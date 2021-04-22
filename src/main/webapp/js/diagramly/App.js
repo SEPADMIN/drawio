@@ -309,7 +309,7 @@ App.startTime = new Date();
 
 /**
  * Defines plugin IDs for loading via p URL parameter. Update the table at
- * https://www.sepadmin.github.io/doc/faq/supported-url-parameters
+ * https://www.diagrams.net/doc/faq/supported-url-parameters
  */
 App.pluginRegistry = {'4xAKTrabTpTzahoLthkwPNUn': 'plugins/explore.js',
 	'ex': 'plugins/explore.js', 'p1': 'plugins/p1.js',
@@ -1374,9 +1374,9 @@ App.prototype.initializeEmbedMode = function()
 {
 	if (urlParams['embed'] == '1')
 	{
-		if (window.location.hostname == 'app.sepadmin.github.io')
+		if (window.location.hostname == 'app.diagrams.net')
 		{
-			this.showBanner('EmbedDeprecationFooter', 'app.sepadmin.github.io will stop working for embed mode. Please use embed.sepadmin.github.io.');
+			this.showBanner('EmbedDeprecationFooter', 'app.diagrams.net will stop working for embed mode. Please use embed.diagrams.net.');
 		}
 		
 		if (App.embedModePluginsCount > 0 || this.initEmbedDone)
@@ -1689,7 +1689,7 @@ App.prototype.init = function()
 				else if (urlParams['embed'] != '1' && this.getServiceName() == 'draw.io')
 
 				{
-					// just app.sepadmin.github.io users
+					// just app.diagrams.net users
 					// this.showNameConfBanner();
 				}
 			}));
@@ -1881,7 +1881,7 @@ App.prototype.isDriveDomain = function()
 		(window.location.hostname == 'test.draw.io' ||
 		window.location.hostname == 'www.draw.io' ||
 		window.location.hostname == 'drive.draw.io' ||
-		window.location.hostname == 'app.sepadmin.github.io' ||
+		window.location.hostname == 'app.diagrams.net' ||
 		window.location.hostname == 'jgraph.github.io');
 };
 
@@ -1907,9 +1907,9 @@ App.prototype.getPusher = function()
  */
 App.prototype.showNameChangeBanner = function()
 {
-	this.showBanner('DiagramsFooter', 'draw.io is now sepadmin.github.io', mxUtils.bind(this, function()
+	this.showBanner('DiagramsFooter', 'draw.io is now diagrams.net', mxUtils.bind(this, function()
 	{
-		this.openLink('https://www.sepadmin.github.io/blog/move-diagrams-net');
+		this.openLink('https://www.diagrams.net/blog/move-diagrams-net');
 	}));
 };
 
@@ -1931,7 +1931,7 @@ App.prototype.showDownloadDesktopBanner = function()
 {
 	this.showBanner('DesktopFooter', mxResources.get('downloadDesktop'), mxUtils.bind(this, function()
 	{
-		this.openLink('https://get.sepadmin.github.io/');
+		this.openLink('https://get.diagrams.net/');
 	}));
 };
 
@@ -5000,9 +5000,9 @@ App.prototype.loadFile = function(id, sameWindow, file, success, force)
 			{
 				this.spinner.stop();
 				
-				this.alert('[Deprecation] #S is no longer supported, go to https://app.sepadmin.github.io/?desc=' + id.substring(1).substring(0, 10), mxUtils.bind(this, function()
+				this.alert('[Deprecation] #S is no longer supported, go to https://app.diagrams.net/?desc=' + id.substring(1).substring(0, 10), mxUtils.bind(this, function()
 				{
-					window.location.href = 'https://app.sepadmin.github.io/?desc=' + id.substring(1);
+					window.location.href = 'https://app.diagrams.net/?desc=' + id.substring(1);
 				}));
 			}
 			else if (id.charAt(0) == 'R')
