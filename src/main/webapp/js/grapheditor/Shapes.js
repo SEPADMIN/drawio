@@ -3097,6 +3097,23 @@
 	mxUtils.extend(OrShape, mxActor);
 	OrShape.prototype.redrawPath = function(c, x, y, w, h)
 	{
+		c.moveTo(w, 0);
+		c.quadTo(0, 0, 0, h / 2);
+		c.quadTo(0, h, 0, h);
+		c.close();
+		c.end();
+	};
+
+	mxCellRenderer.registerShape('or', OrShape);
+
+	// Ror
+	/*function ReverseOrShape()
+	{
+		mxActor.call(this);
+	};
+	mxUtils.extend(ReverseOrShape, mxActor);
+	OrShape.prototype.redrawPath = function(c, x, y, w, h)
+	{
 		c.moveTo(0, 0);
 		c.quadTo(w, 0, w, h / 2);
 		c.quadTo(w, h, 0, h);
@@ -3104,7 +3121,7 @@
 		c.end();
 	};
 
-	mxCellRenderer.registerShape('or', OrShape);
+	mxCellRenderer.registerShape('ror', ReverseOrShape);*/
 
 	// Xor
 	function XorShape()
